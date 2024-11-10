@@ -47,7 +47,7 @@ CREATE TABLE `cliente` (
   `localidad` int(11) NOT NULL,
   `correo_electronico` varchar(45) NOT NULL,
   `telefono` varchar(45) NOT NULL,
-  `estado` bit(1) NOT NULL DEFAULT b'1',
+  `estado` bit(1) NOT NULL DEFAULT b'0',
   PRIMARY KEY (`dni_cliente`),
   UNIQUE KEY `cuil_UNIQUE` (`cuil`),
   KEY `fk_nacionalidades_idx` (`nacionalidad`),
